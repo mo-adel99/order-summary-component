@@ -3,23 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Order summary card</title>
 </head>
 <body>
 
-  Order Summary
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <img src="assets/images/illustration-hero.svg" alt="hero image">
+      </div>
+      <div class="card-content">
+        <h1 class="card-heading">
+          Order Summary
+        </h1>
+        <p class="card-desc">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+        <div class="card-pricing">
+          <div class="card-price">
+            <img src="assets/images/icon-music.svg" alt="">
+            <div class="price-plan">
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <div class="card-plan-change">
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="btn btn-proceed">Proceed to Payment</a>
+          <a href="#" class="btn btn-cancel">Cancel Order</a>
+        </div>   
+      </div>
+    </div>
+  </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
 </body>
 </html>

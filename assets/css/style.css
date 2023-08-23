@@ -1,0 +1,140 @@
+:root {
+  --dark-blue: hsl(223, 47%, 23%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --Pale-blue: hsl(225, 100%, 94%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width:400px) {
+  body {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.container  {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  border-radius: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
+}
+
+.card-img img{
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+  padding: 1.6rem 1.5rem 2.4rem;
+}
+
+.card-heading {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card-desc {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+
+.card-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: var(--very-pale-blue);
+  padding: .8rem;
+  border-radius: 8px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-plan p:nth-child(1) {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.price-plan p:nth-child(2) {
+  font-size: 14px;
+  color: var(--desaturated-blue);
+}
+
+.card-plan-change a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 250ms ease-in-out;
+}
+
+.card-plan-change a:hover {
+  color: hsla(245, 75%, 52%, 0.658);
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-proceed {
+  background-color: var(--bright-blue);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
+  font-size: 15px;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-proceed:hover {
+  background-color: hsla(245, 75%, 52%, 0.658);
+}
+
+.btn-cancel {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  font-size: 14px;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-cancel:hover {
+  color: var(--dark-blue);
+}
