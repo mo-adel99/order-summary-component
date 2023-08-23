@@ -20,12 +20,6 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width:400px) {
-  body {
-    background-image: url('../images/pattern-background-desktop.svg');
-  }
-}
-
 img {
   width: 100%;
 }
@@ -118,7 +112,7 @@ img {
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, .2);
   font-size: 15px;
   transition: all 250ms ease-in-out;
 }
@@ -137,4 +131,50 @@ img {
 
 .btn-cancel:hover {
   color: var(--dark-blue);
+}
+
+@media screen and (min-width:400px) {
+  body {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .card-content {
+    padding: 2.1rem 2.5rem 2.4rem;
+  }
+
+  .card-heading {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .card-desc {
+    margin-bottom: 1.2rem;
+    font-size: 15px;
+  }
+
+  .card-pricing {
+    margin-bottom: 1.5rem;
+    padding: 1.4rem;
+  }
+
+  .card-price {
+    gap: 16px;
+  }
+
+  .price-plan p:nth-child(1) {
+    font-size: 15px;
+  }
+  
+  .price-plan p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .btn-proceed {
+    padding: .8rem;
+    font-size: 14px;
+  }
 }
